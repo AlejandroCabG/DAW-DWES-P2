@@ -7,7 +7,8 @@ foreach ($nombres as $nombre) {
     echo '</br>';
 }
 echo '<pre>';
-print_r($nombres);//Permet veure el contingut de la variable
-echo count($nombres);
+echo '</br>';
+print_r($nombres);//Permite ver el contenido de la variable
+echo "El número toral de compañeros es => " .count($nombres);
 echo '</pre>';
 echo '</br>';

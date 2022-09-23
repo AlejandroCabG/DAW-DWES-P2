@@ -3,14 +3,17 @@ $nombres =[
     "Alejandro",'Joel','Alex','Ricard','Al','Adria','Hugo','Sergi'
 ];
 
-//foreach($nombres as $valor){
-//   echo "<li> El tamaño de " .$valor. " es " .strlen($valor);
+foreach($nombres as $valor){
+  echo "<li> El tamaño de " .$valor. " es " .strlen($valor);
+    echo '<br><br>';
 
-//}
+}
 
-//Per a calcular la longitud màxima de l'array faig servir array_map
+//Para calcular la longitud máxima del array uso array_map que envía cada valor del array a la función
+//strlen para determinar el tamaño,y devuelve un array con los valores mínimo y máximoS de la función min y max.
 $max_len = max(array_map('strlen', $nombres));
-echo 'El valor màxim és : ' .$max_len;
+echo 'El valor máximo es : ' .$max_len;
 echo '</br>';
 $min_len = min(array_map('strlen', $nombres));
-echo 'El valor minim és : '.$min_len;
+echo 'El valor mínimo es : '.$min_len;
+
