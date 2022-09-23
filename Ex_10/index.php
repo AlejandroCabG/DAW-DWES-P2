@@ -8,12 +8,12 @@ function arrayClaveValor($aviones,$orden,$elemento)
     if ($orden == "asc" && $elemento == "clave") {
         ksort($aviones);//Ordena un array por clave, manteniendo la correlación entre la clave y los datos
         foreach ($aviones as $nombre => $num) {
-            echo $num . '<br>';
+            echo "Els números son: ".$num . '<br>';
         }
     } elseif ($orden == "desc" && $elemento == "clave") {
         ksort($aviones);
         foreach ($aviones as $nombre => $num) {
-            echo $num . '<br>';
+            echo "Els números son: ".$num . '<br>';
         }
     }
 
@@ -21,13 +21,13 @@ function arrayClaveValor($aviones,$orden,$elemento)
         krsort($aviones);//Ordena un array por clave en orden inverso, manteniendo la correlación entre la clave
         // y los datos.
         foreach ($aviones as $nombre => $num) {
-            echo $num. '<br>';
+            echo "Els números son: ".$num. '<br>';
         }
     }
     elseif ($orden == "desc" && $elemento == "ele") {
         krsort($aviones);
         foreach ($aviones as $nombre => $num) {
-            echo $num. '<br>';
+            echo "Els números son: ".$num. '<br>';
         }
 
 
